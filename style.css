@@ -246,14 +246,23 @@
       letter-spacing: .02em;
     }
     .btn-cv {
-      position: relative;
-      letter-spacing: .02em;
+      position: absolute;
+      text-decoration: none;
       color: var(--ink);
       font-family: 'Bebas Neue', sans-serif;
-      border: 2px solid #0E0D0A;
+      border: 2px solid #E8290B;
       border-radius: 10px;
       padding: 6px;
-      top: 20px;
+      font-size:.9rem;
+      letter-spacing:.08em;
+      transition: .2s;
+      top: -10px;
+      right: 60px;
+    }
+
+    .btn-cv:hover{
+      background:var(--ink);
+      color:var(--paper);
     }
 
     /* ABOUT */
@@ -517,4 +526,10 @@
       .tl-item { grid-template-columns: 80px 1fr; gap: 16px; }
       footer { padding: 20px; }
       .about-big { flex-direction: column; }
+      .btn-cv{position:relative;top:auto;right:auto;display:inline-block;margin-top:20px;}
+      .body{cursor:none;}
     }
+
+    
+     
+ 
