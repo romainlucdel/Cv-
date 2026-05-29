@@ -245,6 +245,19 @@
       line-height: .95;
       letter-spacing: .02em;
     }
+    .btn-cv {
+      position: relative;
+      letter-spacing: .02em;
+      color: var(--ink);
+      font-family: 'Bebas Neue', sans-serif;
+      border: 2px solid #0E0D0A;
+      border-radius: 10px;
+      padding: 6px;
+      top: 20px;
+      align-items: end;
+      
+
+    }
 
     /* ABOUT */
     .about-layout {
