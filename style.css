@@ -527,7 +527,6 @@
       footer { padding: 20px; }
       .about-big { flex-direction: column; }
       .btn-cv{position:relative;top:auto;right:auto;display:inline-block;margin-top:20px;}
-      .body{cursor:none;}
     }
 
     
