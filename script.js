@@ -46,7 +46,7 @@
     links.querySelectorAll('a').forEach((lien) => {
     lien.addEventListener('click', () => {
     links.classList.remove('open')
-    burger.setAttribute('aria-expended','false');
+    burger.setAttribute('aria-expanded','false');
    });
   })
 
