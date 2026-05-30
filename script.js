@@ -32,3 +32,20 @@
       document.querySelectorAll('section[id]').forEach(s => { if (window.scrollY >= s.offsetTop - 160) cur = s.id; });
       navAs.forEach(a => { a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--red)' : ''; });
     });
+
+    const burger = document.getElementById('navBurger');
+    const links  = document.getElementById('navLinks');
+
+    burger.addEventListener('click', () => {
+    
+    const estOuvert = links.classList.toggle('open');
+
+    burger.setAttribute('aria-expanded', String(estOuvert) );
+    });
+
+    links.querySelectorAll('a').forEach((lien) => {
+    lien.addEventListener('click', () => {
+    links.classList.remove('open')
+    burger.setAttribute('aria-expended','false');
+   });
+  })
