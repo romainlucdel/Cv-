@@ -9,6 +9,8 @@
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
+    
+    html, body {overflow-x: hidden;}
 
     body {
       font-family: 'Lora', serif;
@@ -521,10 +523,15 @@
       body {cursor: auto;}
       .cursor {display: none;}
       nav { padding: 14px 20px; }
+      .nav-stamp {display: none;}
       .nav-links {display: flex;flex-direction: column;position: fixed;top: 56px;left: 0;right: 0;background: var(--paper);border-bottom: 2px solid var(--ink);padding: 24px 20px;gap: 20px;transform: translateY(-130%);transition: transform .3s ease;}
-      .nav-links.open {transform: translate(0);}
+      .nav-links.open {transform: translateY(0);}
       section { padding: 60px 20px; }
+      
       .hero { padding: 90px 20px 0; }
+      .hero-name { font-size: clamp(2.5rem, 13vw, 13rem);}
+      .hero-eyebrow, .hero-tagline {max-width: 100%; overflow-wrap: break-word;}
+      .hero-tagline br { display: none;}
       .hero-bottom { grid-template-columns: 1fr 1fr; }
       .about-layout, .skills-grid, .contact-layout { grid-template-columns: 1fr; }
       .proj-body { grid-template-columns: 1fr; }
@@ -532,10 +539,23 @@
       footer { padding: 20px; }
       .about-big { flex-direction: column; }
       .btn-cv{position:absolute;top:auto;right:auto;display:inline-block;margin-top:20px;}
-      .nav-burger {display: flex;flex-direction: column;gap: 5px;background: none;border: none;cursor: pointer;padding: 6px;margin-left: 150px;}
+      .nav-burger {display: flex;flex-direction: column;gap: 5px;background: none;border: none;cursor: pointer;padding: 6px;margin-left: auto;}
       .nav-burger span {width: 26px; height: 2px;background: var(--ink);transition: transform .3s ease;}
+      .bg-num{display: none;}
     }
-
+    
+    @media (max-width: 480px) {
+  
+      .hero-bottom { grid-template-columns: 1fr; }
+      .hero-eyebrow, .hero-tagline { max-width: 100%; overflow-wrap: break-word; }
+      .ct-val, .ct-cell, .call-box { overflow-wrap: break-word; word-break: break-word; }
+      section, .hero, nav { padding-left: 16px; padding-right: 16px; }
+      .proj-top {display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+      .proj-live { white-space: nowrap; }
+      .project-box { max-width: 100%; }
+      .project-box, .about-cell, .sk-cell, .ct-cell, .tl-content { max-width: 100%;overflow-wrap: break-word;}
+      }
+    
     
      
  
