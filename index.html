@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
+<html lang="fr" class="no-js"></html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.classList.replace('no-js','js');</script>
   <title>Romain LUCAS-DELPLACE — Intégrateur Web</title>
+  <!-- SEO -->
+  <meta name="description" content="Intégrateur web en reconversion après 17 ans de terrain industriel. Recherche une alternance — contrat de professionnalisation — dès août 2026. Besançon ou télétravail.">
+  <meta name="author" content="Romain Lucas-Delplace">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0E0D0A">
+  <!-- Open Graph (LinkedIn, mail, Facebook) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Romain Lucas-Delplace — Intégrateur Web">
+  <meta property="og:description" content="17 ans de terrain, désormais au service du développement web. Disponible en alternance dès août 2026.">
+  <meta property="og:url" content="https://romlucdel.github.io/">
+  <meta property="og:image" content="https://romlucdel.github.io//og-image.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="canonical" href="https://romlucdel.github.io/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;0,600;1,400&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
   <script src="script.js" defer></script>
@@ -32,11 +50,11 @@
     <div class="bg-num">WEB</div>
     <div class="hero-main">
       <div class="hero-eyebrow">Intégrateur Web · Contrat de Professionnalisation · à partir de Août 2026</div>
-      <div class="hero-name">
+      <h1>
         Romain<br>
         <span class="outline">Lucas</span><br>
         Delplace
-      </div>
+      </h1>
       <div class="hero-rule"></div>
       <p class="hero-tagline">
         De l'industrie au développement web — <strong>17 ans d’exigence sur le terrain</strong>,<br>
@@ -69,7 +87,7 @@
       <div class="sec-num">01</div>
       <div>
         <div class="sec-label">Profil personnel</div>
-        <div class="sec-title">Une reconversion<br>construite.</div>
+        <h2>Une reconversion<br>construite.</h2>
       </div>
     </div>
     <div class="about-layout reveal reveal-d1">
@@ -98,7 +116,7 @@
       <div class="sec-num">02</div>
       <div>
         <div class="sec-label">Parcours professionnel</div>
-        <div class="sec-title">Un parcours<br>de précision</div>
+        <h2>Un parcours<br>de précision</h2>
         <a class="btn-cv" href="Cv-PDF.pdf" target="_blank" rel="noopener">Cv PDF</a>
       </div>
     </div>
@@ -133,14 +151,48 @@
   </section>
 
   <!-- PROJET -->
+    
   <section id="project">
     <div class="sec-header reveal">
       <div class="sec-num">03</div>
       <div>
         <div class="sec-label">Projet personnel</div>
-        <div class="sec-title">Ce que je<br>construis</div>
+        <h2>Ce que je<br>construis</h2>
       </div>
     </div>
+      <div class="project-box reveal">
+  <div class="proj-top">
+    <div>
+      <h3>DEMARCHE.AI<br>landing produit</h3>
+      <p class="sub">Page d'accueil d'un assistant administratif, avec un module de démonstration interactif entièrement côté client.</p>
+    </div>
+    <div class="proj-live"><span class="blink-dot"></span>En ligne</div>
+  </div>
+  <div class="proj-body">
+    <p>Conception et intégration complète d'une landing page responsive : design system maison, animations au scroll et un composant de démonstration en JavaScript pur, sans framework ni dépendance.</p>
+    <ul class="feat-list">
+      <li>Design system maison (variables CSS, typographie)</li>
+      <li>Intégration responsive mobile-first</li>
+      <li>Démonstrateur interactif en JavaScript (100% client)</li>
+      <li>Animations et micro-interactions au scroll</li>
+      <li>Formulaire d'inscription avec validation</li>
+      <li>Déployé sur GitHub Pages</li>
+    </ul>
+  </div>
+   <div class="proj-footer">
+    <div class="stack">
+      <span class="s-tag">HTML5</span>
+      <span class="s-tag">CSS3</span>
+      <span class="s-tag">JavaScript</span>
+      <span class="s-tag">Responsive</span>
+      <span class="s-tag">Git / GitHub</span>
+    </div>
+    <div class="proj-actions">
+      <a class="btn-ghost" href="https://github.com/RomLucDel/demarche-ai-landing" target="_blank" rel="noopener">↗ GitHub</a>
+      <a class="btn-ink" href="https://romlucdel.github.io/demarche-ai-landing/" target="_blank" rel="noopener">↗ Voir la démo</a>
+    </div>
+  </div>
+  </div>
     <div class="project-box reveal">
       <div class="proj-top">
         <div>
@@ -150,7 +202,7 @@
         <div class="proj-live"><span class="blink-dot"></span>En développement</div>
       </div>
       <div class="proj-body">
-        <p>Un projet réel pensé de A à Z : architecture, design, front-end et intégration back-end. Objectif : construire quelque chose d'utilisable avec une vraie logique produit et une expérience utilisateur complète.</p>
+        <p>Un projet réel pensé de A à Z : architecture, design, front-end et intégration back-end. </p>
         <ul class="feat-list">
           <li>Catalogue dynamique avec filtres</li>
           <li>Panier persistant via localStorage</li>
@@ -171,6 +223,7 @@
         <a class="btn-ink" href="https://github.com/RomLucDel/Projet-Perso-1" target="_blank" rel="noopener">↗ Voir sur GitHub</a>
       </div>
     </div>
+
   </section>
 
   <!-- COMPÉTENCES -->
@@ -179,7 +232,7 @@
       <div class="sec-num">04</div>
       <div>
         <div class="sec-label">Stack & Savoir-faire</div>
-        <div class="sec-title">En toute<br>transparence</div>
+        <h2>En toute<br>transparence</h2>
       </div>
     </div>
     <div class="skills-grid reveal">
@@ -187,23 +240,23 @@
         <h4>Compétences techniques</h4>
         <div class="sk-row">
           <div class="sk-top"><span class="sk-name">HTML / CSS</span><span class="sk-pct">75%</span></div>
-          <div class="sk-bar"><div class="sk-fill" data-width="75"></div></div>
+          <div class="sk-bar"><div class="sk-fill" data-width="75" style="--w:75%"></div></div>
         </div>
         <div class="sk-row">
           <div class="sk-top"><span class="sk-name">JavaScript</span><span class="sk-pct">55%</span></div>
-          <div class="sk-bar"><div class="sk-fill" data-width="55"></div></div>
+          <div class="sk-bar"><div class="sk-fill" data-width="55" style="--w:55%"></div></div>
         </div>
         <div class="sk-row">
           <div class="sk-top"><span class="sk-name">Git / GitHub</span><span class="sk-pct">60%</span></div>
-          <div class="sk-bar"><div class="sk-fill" data-width="60"></div></div>
+          <div class="sk-bar"><div class="sk-fill" data-width="60" style="--w:60%"></div></div>
         </div>
         <div class="sk-row">
           <div class="sk-top"><span class="sk-name">API REST</span><span class="sk-pct">45%</span></div>
-          <div class="sk-bar"><div class="sk-fill" data-width="45"></div></div>
+          <div class="sk-bar"><div class="sk-fill" data-width="45" style="--w:45%"></div></div>
         </div>
         <div class="sk-row">
           <div class="sk-top"><span class="sk-name">UX / Design</span><span class="sk-pct">50%</span></div>
-          <div class="sk-bar"><div class="sk-fill" data-width="50"></div></div>
+          <div class="sk-bar"><div class="sk-fill" data-width="50" style="--w:50%"></div></div>
         </div>
       </div>
       <div class="sk-cell">
@@ -226,7 +279,7 @@
       <div class="sec-num">05</div>
       <div>
         <div class="sec-label">Me rejoindre</div>
-        <div class="sec-title">Parlons de<br>votre alternance</div>
+        <h2>Parlons de<br>votre alternance</h2>
       </div>
     </div>
     <div class="contact-layout reveal">
