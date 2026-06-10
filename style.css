@@ -443,13 +443,20 @@
       padding-bottom: 12px;
       border-bottom: 2px solid var(--ink);
     }
-    .sk-row { margin-bottom: 20px; }
-    .sk-top { display: flex; justify-content: space-between; margin-bottom: 8px; }
-    .sk-name { font-size: .88rem; }
-    .sk-pct { font-family: 'Courier Prime', monospace; font-size: .72rem; color: var(--red); font-weight: 700; }
-    .sk-bar { height: 2px; background: var(--faint); }
-    .sk-fill { height: 100%; background: var(--ink); width: var(--w, 0); transition: width 1.2s cubic-bezier(.4,0,.2,1); }
-    .js .sk-fill { width: 0; }
+    .sk-group { margin-bottom: 28px; }
+    .sk-group:last-child { margin-bottom: 0; }
+    .sk-group-lbl {
+      display: block;
+      font-family: 'Courier Prime', monospace;
+      font-size: .65rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 14px;
+    }
+    .sk-cell .stack { gap: 8px; }
+    .s-tag--soon { border-style: dashed; border-color: var(--faint); color: var(--muted); }
+    .s-tag--soon:hover { background: var(--muted); border-color: var(--muted); color: var(--paper); }
     .soft-grid { display: flex; flex-direction: column; gap: 10px; }
     .soft-item {
       display: flex;

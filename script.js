@@ -12,7 +12,6 @@
       entries.forEach(e => {
         if (!e.isIntersecting) return;
         e.target.classList.add('visible');
-        e.target.querySelectorAll('.sk-fill').forEach(b => { b.style.width = b.dataset.width + '%'; });
       });
     }, { threshold: 0.1 });
 
